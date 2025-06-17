@@ -1,1 +1,72 @@
--- down rn
+getgenv().Keyo = {
+    ['Silent Aim'] = {
+        ['Enabled'] = true,
+        ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
+        ['Keybind'] = 'Y',
+        ['Keybind Mode'] = 'Toggle',
+        ['Hit Location'] = {
+            ['Type'] = 'Closest Part',
+            ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
+        },
+        ['Fov'] = {
+            ['Enabled'] = true,
+            ['Value'] = 13,
+            ['Show Fov'] = false,
+        },
+        ['Prediction'] = {
+            ['Sets'] = {
+                ["Low"] = 0,
+                ["Medium"] = 0,
+                ["High"] = 0,
+                ["Extreme"] = 0,
+            }
+        },
+    },
+    ['Camlock'] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'Q',
+        ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
+        ['Fov'] = 10,
+        ['Show Fov'] = false,
+        ['Value'] = {
+            ['Snappiness'] = 0.123,
+            ['ThirdPerson'] = false,
+            ['FirstPerson'] = true,
+        },
+        ['Hit Location'] = {
+            ['Type'] = 'Closest Point',
+            ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
+        },
+        ['Prediction'] = {
+            ['Low'] = 0,
+            ['Medium'] = 0,
+            ['High'] = 0
+        }
+    },
+    ['Trigger bot'] = {
+        ['Enabled'] = true,
+        ['Prediction'] = 0,
+        ['Weapons'] = {'[Double-Barrel SG]', '[Revolver]', '[TacticalShotgun]'},
+        ['Keybind'] = {
+            ['Bind'] = 'T',
+            ['Keybind Mode'] = 'Toggle'
+        },
+        ['Delay'] = {['Value'] = 0.01},
+        ['HitParts'] = {
+            ['Type'] = false,
+            ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
+        },
+        ['Custom Size'] = {
+            ['Enabled'] = true,
+            ['Value'] = 13
+        },
+    },
+    ['Range'] = {
+        ['Enabled'] = true,
+        ['Silent Aim'] = 250,
+        ['Camlock'] = 250,
+        ['Trigger bot'] = 250
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/libmant4/keyo/refs/heads/main/table"))()
